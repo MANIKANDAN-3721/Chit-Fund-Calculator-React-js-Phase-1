@@ -1,7 +1,7 @@
 
 import { Component } from "react";
 
-import {CSVLink} from "react-csv"
+
 import InputList2 from "./InputList2";
 import Table2 from "./Table2";
 
@@ -30,7 +30,7 @@ this.setState({characterData:data})
         return(
             <div>
                
-                <CSVLink data={characterData} className="twoDown"><i class="fa-solid fa-download" ></i> Download </CSVLink>
+              
                 <Table2 characterData={characterData} />
                 <InputList2 handleSubmit={this.handleSubmit}/>
             </div>
