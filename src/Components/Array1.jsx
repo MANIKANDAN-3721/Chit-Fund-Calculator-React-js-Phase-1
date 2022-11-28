@@ -2,7 +2,7 @@
 import { Component } from "react";
 import InputList from "./InputList";
 import Table from "./Table";
-
+import {CSVLink} from "react-csv"
 
 
 class FormData extends Component{
@@ -28,7 +28,7 @@ this.setState({characters:character})
         return(
             <div>
                
-         
+                 <CSVLink data={characters}  className="downloadBtn" ><i class="fa-solid fa-download" ></i> Download </CSVLink>
                 <Table charactersData={characters} />
                 <InputList handleSubmitValue={this.handleSubmit}/>
             </div>
